@@ -193,5 +193,18 @@
     "schedule": "Monthly — second Thursday, 4:00 PM – 5:30 PM",
     "image": "young-voices",
     "learnMoreURL": "https://oasispartnership.org/resilience-youth/"
+  },
+  {
+    "id": 16,
+    "title": "Alternative Provision for Young People",
+    "summary": "Support for 16-18 year olds not in education, employment or training",
+    "description": "Suitable for young people 16-18 years old that are classed as NEET, not in education, employment or training. Available throughout the week with one-to-one mentoring or workshops and groups.",
+    "category": "Skills",
+    "comfort": "Medium",
+    "program": "Resilience Youth",
+    "location": "Oasis Café, Aylesbury",
+    "schedule": "Available throughout the week — by appointment",
+    "image": "alternative-provision",
+    "learnMoreURL": "https://oasispartnership.org/resilience-youth/"
   }
 ]

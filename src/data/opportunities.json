@@ -219,5 +219,18 @@
     "schedule": "Mondays and Thursdays, 10:00 AM – 1:00 PM",
     "image": "community-shed",
     "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/"
+  },
+  {
+    "id": 18,
+    "title": "Arts and Crafts Workshop",
+    "summary": "Weekly creative sessions and workshops",
+    "description": "Weekly creative sessions and workshops at Clare Community Workshop. Explore your creativity through various arts and crafts activities in a supportive environment.",
+    "category": "Creative",
+    "comfort": "Medium",
+    "program": "Resilience Studio",
+    "location": "Clare Community Workshop, Aylesbury",
+    "schedule": "Weekly sessions — days vary",
+    "image": "arts-crafts",
+    "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/"
   }
 ]

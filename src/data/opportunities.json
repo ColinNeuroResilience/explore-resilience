@@ -206,5 +206,18 @@
     "schedule": "Available throughout the week — by appointment",
     "image": "alternative-provision",
     "learnMoreURL": "https://oasispartnership.org/resilience-youth/"
+  },
+  {
+    "id": 17,
+    "title": "Aylesbury Community Shed",
+    "summary": "Weekly community workshop sessions — all welcome",
+    "description": "Weekly shedder sessions at the Clare Community Workshop. All welcome — you do not need to be neurodivergent. Referral form required after or before an initial pop-in visit and chat takes place.",
+    "category": "Creative",
+    "comfort": "Medium",
+    "program": "Resilience Hub",
+    "location": "Clare Community Workshop, Aylesbury",
+    "schedule": "Mondays and Thursdays, 10:00 AM – 1:00 PM",
+    "image": "community-shed",
+    "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/"
   }
 ]

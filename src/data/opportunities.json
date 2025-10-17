@@ -7,10 +7,10 @@
     "category": "Social",
     "comfort": "Low",
     "program": "Resilience Hub",
-    "location": "Oasis Café, Aylesbury",
+    "location": "Resilience Café, Aylesbury",
     "schedule": "Every weekday, 12:00 PM – 2:00 PM",
     "image": "cafe-lunch",
-    "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/"
+    "learnMoreURL": "https://oasispartnership.org/resilience-hub/"
   },
   {
     "id": 2,
@@ -20,10 +20,10 @@
     "category": "Social",
     "comfort": "Medium",
     "program": "Resilience Hub",
-    "location": "Oasis Café, Aylesbury",
+    "location": "Resilience Café, Aylesbury",
     "schedule": "Tuesdays, 6:00 PM – 8:00 PM",
     "image": "tasty-tuesdays",
-    "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/"
+    "learnMoreURL": "https://oasispartnership.org/resilience-hub/"
   },
   {
     "id": 3,
@@ -33,10 +33,10 @@
     "category": "Social",
     "comfort": "Medium",
     "program": "Resilience Hub",
-    "location": "Oasis Café, Aylesbury",
+    "location": "Resilience Café, Aylesbury",
     "schedule": "Thursdays, 12:00 PM – 4:30 PM",
     "image": "drop-in",
-    "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/"
+    "learnMoreURL": "https://oasispartnership.org/resilience-hub/"
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
     "location": "Resilience Hub consultation rooms",
     "schedule": "By appointment",
     "image": "coaching",
-    "learnMoreURL": "https://www.skillsbuilder.org/"
+    "learnMoreURL": "https://oasispartnership.org/resilience-pathways/"
   },
   {
     "id": 5,
@@ -59,10 +59,10 @@
     "category": "Skills",
     "comfort": "Medium",
     "program": "Resilience Pathways",
-    "location": "Training Room, Oasis Café",
+    "location": "Training Room, Resilience Hub",
     "schedule": "Weekly sessions — days vary",
     "image": "workshop",
-    "learnMoreURL": "https://www.skillsbuilder.org/"
+    "learnMoreURL": "https://oasispartnership.org/resilience-pathways/"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
     "location": "Oasis Café and partner venues",
     "schedule": "By referral — flexible appointments",
     "image": "employability",
-    "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/projects-routes-to-work/"
+    "learnMoreURL": "https://oasispartnership.org/resilience-pathways/"
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
     "location": "South Central Probation & Oasis sites",
     "schedule": "Rolling intake — group and 1:1 sessions",
     "image": "bedrock",
-    "learnMoreURL": "https://oasispartnership.org/neuro-resilience-bedrock-program/"
+    "learnMoreURL": "https://oasispartnership.org/resilience-program/"
   },
   {
     "id": 8,
@@ -163,7 +163,7 @@
     "category": "Innovation",
     "comfort": "Medium",
     "program": "Resilience Collective",
-    "location": "Oasis Café, Aylesbury",
+    "location": "Resilience Café, Aylesbury",
     "schedule": "Quarterly sessions — next date TBC",
     "image": "co-design",
     "learnMoreURL": "https://oasispartnership.org/resilience-collective/"
@@ -189,7 +189,7 @@
     "category": "Social",
     "comfort": "Medium",
     "program": "Resilience Youth",
-    "location": "Oasis Café, Aylesbury",
+    "location": "Resilience Café, Aylesbury",
     "schedule": "Monthly — second Thursday, 4:00 PM – 5:30 PM",
     "image": "young-voices",
     "learnMoreURL": "https://oasispartnership.org/resilience-youth/"
@@ -202,7 +202,7 @@
     "category": "Skills",
     "comfort": "Medium",
     "program": "Resilience Youth",
-    "location": "Oasis Café, Aylesbury",
+    "location": "Resilience Café, Aylesbury",
     "schedule": "Available throughout the week — by appointment",
     "image": "alternative-provision",
     "learnMoreURL": "https://oasispartnership.org/resilience-youth/"

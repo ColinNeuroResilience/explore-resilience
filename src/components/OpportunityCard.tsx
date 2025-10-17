@@ -20,11 +20,11 @@ interface OpportunityCardProps {
 
 const getComfortColor = (comfort: string) => {
   switch (comfort) {
-    case "Low":
+    case "One-to-One":
+      return "bg-blue-100 text-blue-800 border-blue-200";
+    case "Small Group":
       return "bg-green-100 text-green-800 border-green-200";
-    case "Medium":
-      return "bg-yellow-100 text-yellow-800 border-yellow-200";
-    case "High":
+    case "Larger Group":
       return "bg-orange-100 text-orange-800 border-orange-200";
     default:
       return "bg-muted text-muted-foreground";
@@ -38,11 +38,11 @@ const OpportunityCard = ({ opportunity, onLearnMore }: OpportunityCardProps) => 
         <Badge variant="secondary" className="text-xs">
           {opportunity.program}
         </Badge>
-        <Badge 
-          variant="outline" 
+        <Badge
+          variant="outline"
           className={`text-xs ${getComfortColor(opportunity.comfort)}`}
         >
-          {opportunity.comfort} Comfort
+          {opportunity.comfort}
         </Badge>
       </div>
       

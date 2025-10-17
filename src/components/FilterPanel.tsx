@@ -18,7 +18,7 @@ const categories = [
   "Innovation"
 ];
 
-const comfortLevels = ["Low", "Medium", "High"];
+const comfortLevels = ["One-to-One", "Small Group", "Larger Group"];
 
 const FilterPanel = ({
   selectedCategories,
@@ -32,7 +32,7 @@ const FilterPanel = ({
         <Filter className="w-5 h-5 text-primary" />
         <h2 className="text-xl font-semibold text-foreground">Filter Opportunities</h2>
       </div>
-      
+
       <div className="space-y-6">
         {/* Categories */}
         <div>
@@ -52,11 +52,11 @@ const FilterPanel = ({
             ))}
           </div>
         </div>
-        
-        {/* Comfort Levels */}
+
+        {/* Group Size */}
         <div>
           <h3 className="text-sm font-medium text-muted-foreground mb-3">
-            Comfort Level
+            Group Size
           </h3>
           <div className="flex flex-wrap gap-2">
             {comfortLevels.map((level) => (
@@ -71,7 +71,7 @@ const FilterPanel = ({
             ))}
           </div>
           <p className="text-xs text-muted-foreground mt-2">
-            Low = minimal social demands • Medium = some interaction • High = active collaboration
+            One-to-One = individual support • Small Group = 2-8 people • Larger Group = open community events
           </p>
         </div>
       </div>

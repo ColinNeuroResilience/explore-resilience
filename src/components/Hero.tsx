@@ -1,13 +1,15 @@
-import { Compass } from "lucide-react";
+import logo from "@/assets/neuro-resilience-logo.png";
 
 const Hero = () => {
   return (
     <section className="bg-gradient-to-br from-primary/5 via-background to-accent/5 py-16 md:py-24 px-4">
       <div className="container max-w-6xl mx-auto text-center">
         <div className="flex justify-center mb-6">
-          <div className="bg-accent/20 p-4 rounded-full">
-            <Compass className="w-12 h-12 md:w-16 md:h-16 text-primary" strokeWidth={1.5} />
-          </div>
+          <img 
+            src={logo} 
+            alt="Neuro Resilience Logo" 
+            className="h-24 md:h-32 w-auto object-contain"
+          />
         </div>
         
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">

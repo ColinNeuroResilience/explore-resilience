@@ -23,6 +23,7 @@ interface Opportunity {
 const Index = () => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedComfortLevels, setSelectedComfortLevels] = useState<string[]>([]);
+  const [selectedPrograms, setSelectedPrograms] = useState<string[]>([]);
   const [selectedOpportunity, setSelectedOpportunity] = useState<Opportunity | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -44,23 +45,33 @@ const Index = () => {
     );
   };
 
+  const handleProgramToggle = (program: string) => {
+    setSelectedPrograms(prev =>
+      prev.includes(program)
+        ? prev.filter(p => p !== program)
+        : [...prev, program]
+    );
+  };
+
   const filteredOpportunities = useMemo(() => {
     return opportunities.filter(opp => {
-      const categoryMatch = selectedCategories.length === 0 || 
+      const categoryMatch = selectedCategories.length === 0 ||
         selectedCategories.includes(opp.category);
-      const comfortMatch = selectedComfortLevels.length === 0 || 
+      const comfortMatch = selectedComfortLevels.length === 0 ||
         selectedComfortLevels.includes(opp.comfort);
-      
-      return categoryMatch && comfortMatch;
+      const programMatch = selectedPrograms.length === 0 ||
+        selectedPrograms.includes(opp.program);
+
+      return categoryMatch && comfortMatch && programMatch;
     });
-  }, [opportunities, selectedCategories, selectedComfortLevels]);
+  }, [opportunities, selectedCategories, selectedComfortLevels, selectedPrograms]);
 
   const handleLearnMore = (opportunity: Opportunity) => {
     setSelectedOpportunity(opportunity);
     setIsModalOpen(true);
   };
 
-  const activeFilters = selectedCategories.length + selectedComfortLevels.length;
+  const activeFilters = selectedCategories.length + selectedComfortLevels.length + selectedPrograms.length;
 
   return (
     <div className="min-h-screen bg-background">
@@ -72,8 +83,10 @@ const Index = () => {
           <FilterPanel
             selectedCategories={selectedCategories}
             selectedComfortLevels={selectedComfortLevels}
+            selectedPrograms={selectedPrograms}
             onCategoryToggle={handleCategoryToggle}
             onComfortToggle={handleComfortToggle}
+            onProgramToggle={handleProgramToggle}
           />
         </div>
         

@@ -79,10 +79,17 @@ const OpportunityModal = ({ opportunity, isOpen, onClose }: OpportunityModalProp
         </DialogHeader>
         
         <div className="space-y-6 mt-4">
-          {/* Image placeholder - would be replaced with actual images */}
-          <div className="w-full h-48 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 rounded-xl flex items-center justify-center">
-            <span className="text-sm text-muted-foreground">{opportunity.category} Opportunity</span>
-          </div>
+          {opportunity.image && opportunity.image.startsWith('http') ? (
+            <img
+              src={opportunity.image}
+              alt={opportunity.title}
+              className="w-full h-48 object-cover rounded-xl"
+            />
+          ) : (
+            <div className="w-full h-48 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 rounded-xl flex items-center justify-center">
+              <span className="text-sm text-muted-foreground">{opportunity.category} Opportunity</span>
+            </div>
+          )}
           
           <div>
             <h4 className="font-semibold text-foreground mb-2">About This Opportunity</h4>
@@ -109,14 +116,35 @@ const OpportunityModal = ({ opportunity, isOpen, onClose }: OpportunityModalProp
             </div>
           </div>
           
-          <Button 
-            onClick={handleInterested}
-            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground gap-2"
-            size="lg"
-          >
-            <Heart className="w-4 h-4" />
-            I'm Interested
-          </Button>
+          <div className="grid grid-cols-2 gap-3">
+            <Button
+              onClick={handleInterested}
+              className="w-full bg-accent hover:bg-accent/90 text-accent-foreground gap-2"
+              size="lg"
+            >
+              <Heart className="w-4 h-4" />
+              I'm Interested
+            </Button>
+
+            <Button
+              asChild
+              variant="outline"
+              className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-50 hover:text-blue-700 font-medium"
+              size="lg"
+            >
+              <a
+                href="https://oasispartnership.org/getintouch/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Give Us Your Details
+              </a>
+            </Button>
+          </div>
+
+          <p className="text-xs text-center text-muted-foreground mt-2">
+            Share your details and we'll be in touch
+          </p>
         </div>
       </DialogContent>
     </Dialog>

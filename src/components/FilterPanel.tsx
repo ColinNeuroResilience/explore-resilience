@@ -4,8 +4,10 @@ import { Filter } from "lucide-react";
 interface FilterPanelProps {
   selectedCategories: string[];
   selectedComfortLevels: string[];
+  selectedPrograms: string[];
   onCategoryToggle: (category: string) => void;
   onComfortToggle: (level: string) => void;
+  onProgramToggle: (program: string) => void;
 }
 
 const categories = [
@@ -20,11 +22,22 @@ const categories = [
 
 const comfortLevels = ["One-to-One", "Small Group", "Larger Group"];
 
+const programs = [
+  { name: "Resilience Hub", color: "bg-[#A88EE6] text-white border-[#A88EE6]" },
+  { name: "Resilience Pathways", color: "bg-[#2CB7B2] text-white border-[#2CB7B2]" },
+  { name: "Resilience Program", color: "bg-[#007A78] text-white border-[#007A78]" },
+  { name: "Resilience Studio", color: "bg-[#F25C5C] text-white border-[#F25C5C]" },
+  { name: "Resilience Collective", color: "bg-[#FFD65E] text-black border-[#FFD65E]" },
+  { name: "Oasis Youth", color: "bg-[#F25C5C] text-white border-[#F25C5C]" }
+];
+
 const FilterPanel = ({
   selectedCategories,
   selectedComfortLevels,
+  selectedPrograms,
   onCategoryToggle,
-  onComfortToggle
+  onComfortToggle,
+  onProgramToggle
 }: FilterPanelProps) => {
   return (
     <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-sm">
@@ -73,6 +86,27 @@ const FilterPanel = ({
           <p className="text-xs text-muted-foreground mt-2">
             One-to-One = individual support • Small Group = 2-8 people • Larger Group = open community events
           </p>
+        </div>
+
+        {/* Programs */}
+        <div>
+          <h3 className="text-sm font-medium text-muted-foreground mb-3">
+            Programs
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {programs.map((program) => (
+              <Badge
+                key={program.name}
+                variant="outline"
+                className={`cursor-pointer transition-all hover:scale-105 ${
+                  selectedPrograms.includes(program.name) ? program.color : ""
+                }`}
+                onClick={() => onProgramToggle(program.name)}
+              >
+                {program.name}
+              </Badge>
+            ))}
+          </div>
         </div>
       </div>
     </div>

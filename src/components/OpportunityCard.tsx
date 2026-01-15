@@ -11,6 +11,7 @@ interface Opportunity {
   program: string;
   location: string;
   schedule: string;
+  logo?: string;
 }
 
 interface OpportunityCardProps {
@@ -31,13 +32,41 @@ const getComfortColor = (comfort: string) => {
   }
 };
 
+const getProgramColor = (program: string) => {
+  switch (program) {
+    case "Resilience Hub":
+      return "bg-[#A88EE6] text-white border-[#A88EE6]";
+    case "Resilience Pathways":
+      return "bg-[#2CB7B2] text-white border-[#2CB7B2]";
+    case "Resilience Program":
+      return "bg-[#007A78] text-white border-[#007A78]";
+    case "Resilience Studio":
+      return "bg-[#F25C5C] text-white border-[#F25C5C]";
+    case "Resilience Collective":
+      return "bg-[#FFD65E] text-black border-[#FFD65E]";
+    case "Oasis Youth":
+      return "bg-[#F25C5C] text-white border-[#F25C5C]";
+    default:
+      return "bg-muted text-muted-foreground";
+  }
+};
+
 const OpportunityCard = ({ opportunity, onLearnMore }: OpportunityCardProps) => {
   return (
     <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 animate-fade-in">
       <div className="flex items-start justify-between mb-3">
-        <Badge variant="secondary" className="text-xs">
-          {opportunity.program}
-        </Badge>
+        <div className="flex items-center gap-2">
+          <Badge className={`text-xs ${getProgramColor(opportunity.program)}`}>
+            {opportunity.program}
+          </Badge>
+          {opportunity.logo && (
+            <img
+              src={opportunity.logo}
+              alt="Programme logo"
+              className="h-6 w-auto object-contain opacity-90"
+            />
+          )}
+        </div>
         <Badge
           variant="outline"
           className={`text-xs ${getComfortColor(opportunity.comfort)}`}
@@ -45,7 +74,7 @@ const OpportunityCard = ({ opportunity, onLearnMore }: OpportunityCardProps) => 
           {opportunity.comfort}
         </Badge>
       </div>
-      
+
       <h3 className="text-lg font-semibold text-foreground mb-2">
         {opportunity.title}
       </h3>

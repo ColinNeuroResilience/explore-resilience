@@ -7,9 +7,9 @@
     "category": "Social",
     "comfort": "Larger Group",
     "program": "Resilience Hub",
-    "location": "Resilience Café, Aylesbury",
+    "location": "Oasis Café, Aylesbury",
     "schedule": "Every weekday, 12:00 PM – 2:00 PM",
-    "image": "cafe-lunch",
+    "image": "https://oasispartnership.org/wp-content/uploads/2025/05/Garden-2.jpg",
     "learnMoreURL": "https://oasispartnership.org/resilience-hub/"
   },
   {
@@ -20,9 +20,9 @@
     "category": "Social",
     "comfort": "Small Group",
     "program": "Resilience Hub",
-    "location": "Resilience Café, Aylesbury",
+    "location": "Oasis Café, Aylesbury",
     "schedule": "Tuesdays, 6:00 PM – 8:00 PM",
-    "image": "tasty-tuesdays",
+    "image": "https://oasispartnership.org/wp-content/uploads/2025/10/IMG_3138-scaled.jpeg",
     "learnMoreURL": "https://oasispartnership.org/resilience-hub/"
   },
   {
@@ -33,7 +33,7 @@
     "category": "Social",
     "comfort": "Larger Group",
     "program": "Resilience Hub",
-    "location": "Resilience Café, Aylesbury",
+    "location": "Oasis Café, Aylesbury",
     "schedule": "Thursdays, 12:00 PM – 4:30 PM",
     "image": "drop-in",
     "learnMoreURL": "https://oasispartnership.org/resilience-hub/"
@@ -49,6 +49,7 @@
     "location": "Resilience Hub consultation rooms",
     "schedule": "By appointment",
     "image": "coaching",
+    "logo": "https://oasispartnership.org/wp-content/uploads/2023/08/Building-Futures-Programme-logo-colour-no-background.png",
     "learnMoreURL": "https://oasispartnership.org/resilience-pathways/"
   },
   {
@@ -62,19 +63,21 @@
     "location": "Training Room, Resilience Hub",
     "schedule": "Weekly sessions — days vary",
     "image": "workshop",
+    "logo": "https://oasispartnership.org/wp-content/uploads/2023/08/Building-Futures-Programme-logo-colour-no-background.png",
     "learnMoreURL": "https://oasispartnership.org/resilience-pathways/"
   },
   {
     "id": 6,
     "title": "Building Futures Employability Support",
-    "summary": "Move toward employment, education, or training",
-    "description": "One-to-one support and vocational workshops to help you move toward employment, education, or training.",
+    "summary": "One-to-one support and small group workshops",
+    "description": "One-to-one support and small group vocational workshops to help you move toward employment, education, or training.",
     "category": "Skills",
     "comfort": "Small Group",
     "program": "Resilience Pathways",
     "location": "Oasis Café and partner venues",
     "schedule": "By referral — flexible appointments",
     "image": "employability",
+    "logo": "https://oasispartnership.org/wp-content/uploads/2023/08/Building-Futures-Programme-logo-colour-no-background.png",
     "learnMoreURL": "https://oasispartnership.org/resilience-pathways/"
   },
   {
@@ -114,6 +117,7 @@
     "location": "Resilience Hub or online",
     "schedule": "Available anytime",
     "image": "profiler",
+    "logo": "https://oasispartnership.org/wp-content/uploads/2023/08/Building-Futures-Programme-logo-colour-no-background.png",
     "learnMoreURL": "https://doitprofiler.com/personal-profilers/neurodiversity-profiler/"
   },
   {
@@ -124,7 +128,7 @@
     "category": "Creative",
     "comfort": "Larger Group",
     "program": "Resilience Studio",
-    "location": "Resilience Café Stage, Aylesbury",
+    "location": "Oasis Café Stage, Aylesbury",
     "schedule": "First Friday of each month, 6:30 PM onwards",
     "image": "open-mic",
     "learnMoreURL": "https://oasispartnership.org/live-music/"
@@ -137,7 +141,7 @@
     "category": "Creative",
     "comfort": "Larger Group",
     "program": "Resilience Studio",
-    "location": "Resilience Café Stage, Aylesbury",
+    "location": "Oasis Café Stage, Aylesbury",
     "schedule": "Third Friday of each month, 7:00 PM onwards",
     "image": "live-gig",
     "learnMoreURL": "https://oasispartnership.org/live-music/"
@@ -163,7 +167,7 @@
     "category": "Innovation",
     "comfort": "Small Group",
     "program": "Resilience Collective",
-    "location": "Resilience Café, Aylesbury",
+    "location": "Oasis Café, Aylesbury",
     "schedule": "Quarterly sessions — next date TBC",
     "image": "co-design",
     "learnMoreURL": "https://oasispartnership.org/resilience-collective/"
@@ -175,7 +179,7 @@
     "description": "Safe, supportive space for young people to socialise, build confidence, and explore creative or skills-based activities.",
     "category": "Social",
     "comfort": "Small Group",
-    "program": "Resilience Youth",
+    "program": "Oasis Youth",
     "location": "Oasis Café, Youth Zone",
     "schedule": "Wednesdays, 3:30 PM – 6:00 PM",
     "image": "youth-drop-in",
@@ -188,8 +192,8 @@
     "description": "A youth-led space where participants share ideas, influence Neuro Resilience programmes, and plan community projects.",
     "category": "Social",
     "comfort": "Small Group",
-    "program": "Resilience Youth",
-    "location": "Resilience Café, Aylesbury",
+    "program": "Oasis Youth",
+    "location": "Oasis Café, Aylesbury",
     "schedule": "Monthly — second Thursday, 4:00 PM – 5:30 PM",
     "image": "young-voices",
     "learnMoreURL": "https://oasispartnership.org/resilience-youth/"
@@ -201,8 +205,21 @@
     "description": "Suitable for young people 16-18 years old that are classed as NEET, not in education, employment or training. Available throughout the week with one-to-one mentoring or workshops and groups.",
     "category": "Skills",
     "comfort": "Small Group",
-    "program": "Resilience Youth",
-    "location": "Resilience Café, Aylesbury",
+    "program": "Oasis Youth",
+    "location": "Resilience Hub, Aylesbury",
+    "schedule": "Available throughout the week — by appointment",
+    "image": "alternative-provision",
+    "learnMoreURL": "https://oasispartnership.org/resilience-youth/"
+  },
+  {
+    "id": 19,
+    "title": "Alternative Provision for Young People",
+    "summary": "Support for 16-18 year olds not in education, employment or training",
+    "description": "Suitable for young people 16-18 years old that are classed as NEET, not in education, employment or training. Available throughout the week with one-to-one mentoring or workshops and groups.",
+    "category": "Skills",
+    "comfort": "One-to-One",
+    "program": "Oasis Youth",
+    "location": "Resilience Hub, Aylesbury",
     "schedule": "Available throughout the week — by appointment",
     "image": "alternative-provision",
     "learnMoreURL": "https://oasispartnership.org/resilience-youth/"
@@ -217,7 +234,7 @@
     "program": "Resilience Hub",
     "location": "Clare Community Workshop, Aylesbury",
     "schedule": "Mondays and Thursdays, 10:00 AM – 1:00 PM",
-    "image": "community-shed",
+    "image": "https://oasispartnership.org/wp-content/uploads/2025/10/IMG_3191-scaled.jpg",
     "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/"
   },
   {
@@ -227,6 +244,19 @@
     "description": "Weekly creative sessions and workshops at Clare Community Workshop. Explore your creativity through various arts and crafts activities in a supportive environment.",
     "category": "Creative",
     "comfort": "Small Group",
+    "program": "Resilience Studio",
+    "location": "Clare Community Workshop, Aylesbury",
+    "schedule": "Weekly sessions — days vary",
+    "image": "arts-crafts",
+    "learnMoreURL": "https://oasispartnership.org/the-oasis-cafe/"
+  },
+  {
+    "id": 20,
+    "title": "Arts and Crafts Workshop",
+    "summary": "Weekly creative sessions and workshops",
+    "description": "Weekly creative sessions and workshops at Clare Community Workshop. Explore your creativity through various arts and crafts activities in a supportive environment.",
+    "category": "Creative",
+    "comfort": "One-to-One",
     "program": "Resilience Studio",
     "location": "Clare Community Workshop, Aylesbury",
     "schedule": "Weekly sessions — days vary",
